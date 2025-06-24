@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Przewodnik po pizzy neapolitańskiej</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar (dynamicznie) -->
+  <div id="navbar-container"></div>
+
+  <!-- ✅ Hero z wideo i rozmyciem -->
+  <main class="hero text-white text-center d-flex justify-content-center align-items-center">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="videos/pizza-hero.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-blur"></div>
+    <div class="hero-text">
+      <h1 class="fade-in">Witaj w przewodniku po pizzy neapolitańskiej</h1>
+      <p class="fade-in delay">Poznaj historię, tradycję i sekrety jednej z najsłynniejszych potraw świata!</p>
+      <a href="#tradycja" class="btn custom-btn-glass fade-in delay-2 mt-3">Zobacz więcej</a>
+    </div>
+  </main>
+
+  <!-- ✅ Sekcja 1 -->
+  <section class="info-section py-5 bg-light reveal" id="tradycja">
+    <div class="container-fluid">
+      <div class="row no-gutters align-items-center">
+        <div class="col-md-6 p-0">
+          <img src="images/pizza-info.jpg" alt="Pizza Neapolitańska" class="img-fluid w-100 h-100 object-cover">
+        </div>
+        <div class="col-md-6 p-5">
+          <h2 class="mb-3">Tradycja i prostota</h2>
+          <p>
+            Pizza neapolitańska to nie tylko potrawa – to dziedzictwo kulturowe. Wyróżnia się prostymi składnikami: mąką typu „00”, świeżymi pomidorami San Marzano i mozzarellą di bufala.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Sekcja 2 -->
+  <section class="info-section py-5 reveal">
+    <div class="container-fluid">
+      <div class="row no-gutters align-items-center flex-md-row-reverse">
+        <div class="col-md-6 p-0">
+          <img src="images/pizza-bake.jpg" alt="Wypiekanie pizzy" class="img-fluid w-100 h-100 object-cover">
+        </div>
+        <div class="col-md-6 p-5">
+          <h2 class="mb-3">Sztuka wypiekania</h2>
+          <p>
+            Pizza wypiekana jest w piecu opalanym drewnem w zaledwie 60–90 sekund. To technika przekazywana przez pokolenia pizzaiolo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Sekcja 3 -->
+  <section class="info-section py-5 bg-light reveal">
+    <div class="container-fluid">
+      <div class="row no-gutters align-items-center">
+        <div class="col-md-6 p-0">
+          <img src="images/avpn-logo.jpg" alt="AVPN" class="img-fluid w-100 h-100 object-cover">
+        </div>
+        <div class="col-md-6 p-5">
+          <h2 class="mb-3">AVPN – strażnik tradycji</h2>
+          <p>
+            AVPN to organizacja, która certyfikuje lokale oferujące prawdziwą pizzę neapolitańską. To strażnik autentyczności, tradycji i jakości.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stopka -->
+  <div id="footer-container"></div>
+
+  <!-- Scripts -->
+  <!-- Scripts (KOLEJNOŚĆ MA ZNACZENIE) -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

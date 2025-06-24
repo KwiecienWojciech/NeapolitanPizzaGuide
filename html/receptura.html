@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receptura – Pizza Neapolitańska</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body class="receptura-page">
+  <!-- Navbar -->
+  <div id="navbar-container"></div>
+
+  <!-- Układ receptury -->
+  <div class="receptura-layout d-flex">
+    <!-- Pasek boczny (desktop) -->
+    <aside class="sidebar-italian-green d-none d-md-flex flex-column justify-content-center align-items-center">
+      <ul class="receptura-menu text-center">
+        <li class="active" data-section="maka"><span class="number">01</span> Mąka</li>
+        <li data-section="woda"><span class="number">02</span> Woda</li>
+        <li data-section="drozdze"><span class="number">03</span> Drożdże</li>
+        <li data-section="pomidory"><span class="number">04</span> Pomidory</li>
+        <li data-section="dojrzewanie"><span class="number">05</span> Dojrzewanie</li>
+        <li data-section="wypiek"><span class="number">06</span> Wypiek</li>
+      </ul>
+    </aside>
+
+    <!-- Slider mobilny (ukryty na desktopie) -->
+    <div class="mobile-slider d-md-none container py-4">
+      <div class="slider-controls text-center mb-3">
+        <button id="prevSlide" class="btn btn-outline-secondary me-2">←</button>
+        <button id="nextSlide" class="btn btn-outline-secondary">→</button>
+      </div>
+
+      <div class="slides-wrapper">
+        <div class="slide active">
+          <h2>01 Mąka</h2>
+          <img src="../images/receptura-maka.jpg" alt="Mąka typu 00" class="img-fluid rounded mb-3" />
+          <p>Mąka typu „00” to fundament ciasta neapolitańskiego – drobno mielona, o wysokiej zawartości glutenu, zapewniająca elastyczność i puszystość.</p>
+        </div>
+        <div class="slide">
+          <h2>02 Woda</h2>
+          <img src="../images/receptura-woda.jpg" alt="Szklana karafka z wodą" class="img-fluid rounded mb-3" />
+          <p>Woda o temperaturze pokojowej (ok. 20–22°C) wpływa na aktywację drożdży i strukturę ciasta. Najlepiej używać przefiltrowanej wody.</p>
+        </div>
+        <div class="slide">
+          <h2>03 Drożdże</h2>
+          <img src="../images/receptura-drozdze.jpg" alt="Świeże drożdże" class="img-fluid rounded mb-3" />
+          <p>Świeże drożdże w małej ilości (ok. 1–2 g na 1 kg mąki) umożliwiają długą fermentację i nadają ciastu lekką strukturę oraz charakterystyczny smak.</p>
+        </div>
+        <div class="slide">
+          <h2>04 Pomidory</h2>
+          <img src="../images/receptura-pomidory.jpg" alt="Pomidory San Marzano" class="img-fluid rounded mb-3" />
+          <p>Oryginalne San Marzano z Kampanii to klasyka sosu do pizzy – słodkie, mięsiste, o niskiej kwasowości. Idealne po rozgnieceniu bez gotowania.</p>
+        </div>
+        <div class="slide">
+          <h2>05 Dojrzewanie</h2>
+          <img src="../images/receptura-dojrzewanie.jpg" alt="Kulki ciasta w pojemniku" class="img-fluid rounded mb-3" />
+          <p>Ciasto fermentuje w temperaturze pokojowej przez 24–48 godzin. Odpoczywa w kulkach, by rozwinąć smak i strukturę glutenową.</p>
+        </div>
+        <div class="slide">
+          <h2>06 Wypiek</h2>
+          <img src="../images/receptura-wypiek.jpg" alt="Pizza z pieca" class="img-fluid rounded mb-3" />
+          <p>Pizza wypiekana przez 60–90 sekund w temperaturze 450–500°C, najlepiej w piecu opalanym drewnem. Brzegi się unoszą i karmelizują.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktopowe sekcje -->
+    <main class="main-layout flex-grow-1 d-none d-md-block">
+      <section id="maka" class="receptura-section active">
+        <div class="receptura-content">
+          <div class="receptura-image">
+            <img src="../images/receptura-maka.jpg" alt="Mąka typu 00" />
+          </div>
+          <div class="receptura-text">
+            <h2>Mąka</h2>
+            <p>Mąka typu „00” to fundament ciasta neapolitańskiego – drobno mielona, o wysokiej zawartości glutenu, zapewniająca elastyczność i puszystość.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="woda" class="receptura-section">
+        <div class="receptura-content">
+          <div class="receptura-image">
+            <img src="../images/receptura-woda.jpg" alt="Szklana karafka z wodą" />
+          </div>
+          <div class="receptura-text">
+            <h2>Woda</h2>
+            <p>Woda o temperaturze pokojowej (ok. 20–22°C) wpływa na aktywację drożdży i strukturę ciasta. Najlepiej używać przefiltrowanej wody.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="drozdze" class="receptura-section">
+        <div class="receptura-content">
+          <div class="receptura-image">
+            <img src="../images/receptura-drozdze.jpg" alt="Świeże drożdże" />
+          </div>
+          <div class="receptura-text">
+            <h2>Drożdże</h2>
+            <p>Świeże drożdże w małej ilości (ok. 1–2 g na 1 kg mąki) umożliwiają długą fermentację i nadają ciastu lekką strukturę oraz charakterystyczny smak.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pomidory" class="receptura-section">
+        <div class="receptura-content">
+          <div class="receptura-image">
+            <img src="../images/receptura-pomidory.jpg" alt="Pomidory San Marzano" />
+          </div>
+          <div class="receptura-text">
+            <h2>Pomidory</h2>
+            <p>Oryginalne San Marzano z Kampanii to klasyka sosu do pizzy – słodkie, mięsiste, o niskiej kwasowości. Idealne po rozgnieceniu bez gotowania.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="dojrzewanie" class="receptura-section">
+        <div class="receptura-content">
+          <div class="receptura-image">
+            <img src="../images/receptura-dojrzewanie.jpg" alt="Kulki ciasta w pojemniku" />
+          </div>
+          <div class="receptura-text">
+            <h2>Dojrzewanie</h2>
+            <p>Ciasto fermentuje w temperaturze pokojowej przez 24–48 godzin. Odpoczywa w kulkach, by rozwinąć smak i strukturę glutenową.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="wypiek" class="receptura-section">
+        <div class="receptura-content">
+          <div class="receptura-image">
+            <img src="../images/receptura-wypiek.jpg" alt="Pizza z pieca" />
+          </div>
+          <div class="receptura-text">
+            <h2>Wypiek</h2>
+            <p>Pizza wypiekana przez 60–90 sekund w temperaturze 450–500°C, najlepiej w piecu opalanym drewnem. Brzegi się unoszą i karmelizują.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Stopka -->
+  <footer class="bg-light text-center py-3">
+    <p class="mb-0">&copy; 2025 Przewodnik po pizzy neapolitańskiej</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
