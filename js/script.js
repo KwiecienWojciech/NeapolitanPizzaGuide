@@ -13,8 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  loadHTML("#navbar-container", "../partials/navbar.html");
-  loadHTML("#footer-container", "../partials/footer.html");
+  const isInSubfolder = window.location.pathname.includes('/html/');
+
+const navbarPath = isInSubfolder ? '../partials/navbar.html' : './partials/navbar.html';
+const footerPath = isInSubfolder ? '../partials/footer.html' : './partials/footer.html';
+
+loadHTML("#navbar-container", navbarPath);
+loadHTML("#footer-container", footerPath);
+
 
   // === Flip karty historia ===
   const historiaCards = document.querySelectorAll('.historia-inner');
